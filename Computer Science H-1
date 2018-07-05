@@ -1,0 +1,34 @@
+//--------------------------------------------------------
+
+//--Author: Micheal Wade Harrison
+//--Date: February 9, 1998
+//--Course: Computer Science H-1
+//--Purpose: To compute the discriminant
+
+//--------------------------------------------------------
+#include<iostream.h>
+#include<graphics.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<time.h>
+#include<math.h>
+
+//--Purpose: To compute the discriminant
+//--vales: Put input with the coefficients
+//
+//--Input: Enter three coefficients
+//--Output: Print out discriminant
+double compute_discriminant(double a, double b, double c);
+
+int main()
+{
+     int a, b, c, equation;
+     cout<<"Please enter the coefficients<a, b, c>"> //--Putting in three coefficients
+     cin>>a>>b>>c;
+     equation=compute_discriminant(a, b, c); //--Uses the discriminant
+     cout<<"The anser is :"<<equation<<endl;
+}
+double compute_discriminant (double a, double b, double c)
+{
+        return (b*b) - 4 * a * c; //--Computing the discriminant
+}
